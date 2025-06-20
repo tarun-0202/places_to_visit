@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>famous places</title>
+    <link rel="stylesheet" href="t2.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="left-panel">
+            <button class="toggle-btn" onclick="toggleWatchlist()">📌Places to Visit</button>
+            <div class="watchlist" id="watchlistPanel">
+                <ul id="watchlistItems">
+                </ul>
+            </div>
+        </div>
+        <h1>Famous Places in the World</h1>
+    </div>
+    
+    <div class="container">
+        <div class="card" data-name="Taj Mahal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal" onclick="alertVisit('Taj Mahal')">
+            <h3>Taj Mahal</h3>
+            <p>Located in Agra, India.Built by Shah Jahan as a symbol of love for his wife Mumtaz Mahal.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=MJiy0ja34EA')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+
+        <div class="card" data-name="Eiffel Tower">
+            <img src="https://cdn.britannica.com/52/245552-050-3D7334F9/Eiffel-Tower-Paris.jpg?w=300" alt="Eiffel Tower" onclick="alertVisit('Eiffel Tower')">
+            <h3>Eiffel Tower</h3>
+            <p>Located in Paris, France.Built as the entrance to the 1889 World’s Fair and now a global icon.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=aZ-31-p3saU')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Great Wall of China">
+            <img src="https://whc.unesco.org/uploads/thumbs/site_0438_0035-750-750-20241024162522.jpg" alt="Great Wall" onclick="alertVisit('Great Wall of China')">
+            <h3>Great Wall of China</h3>
+            <p>Located in northern China.Built to protect Chinese states from invasions and raids</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=EotbKqZmBuY')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Statue of Liberty">
+            <img src="https://cdn.britannica.com/71/99571-050-DFF0A6E5/Statue-of-Liberty-Island-New-York.jpg?w=300" alt="Statue of Liberty" onclick="alertVisit('Statue of Liberty')">
+            <h3>Statue of Liberty</h3>
+            <p>Located in New York, USA.A gift from France representing freedom and democracy..</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=gLoT9OD_0cw')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Colosseum">
+            <img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg?w=300" alt="Colosseum" onclick="alertVisit('Colosseum')">
+            <h3>Colosseum</h3>
+            <p>Located in Rome, Italy.Used for gladiator fights and public spectacles in ancient Rome.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=56tlOtVn40c')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Machu Picchu">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Machu_Picchu%2C_Peru.jpg" alt="Machu Picchu" onclick="alertVisit('Machu Picchu')">
+            <h3>Machu Picchu</h3>
+            <p>Located in the Andes Mountains of Peru.A historic Incan city known for its architecture and mystery.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=oZ90M55mDac')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Christ the Redeemer">
+            <img src="https://www.paineirascorcovado.com.br/wp-content/webp-express/webp-images/uploads/elementor/thumbs/CristoRedentor2-oyzigktfdsprdoxdbhdrwm5vfd2wk05daondeyc820.png.webp" alt="Christ the Redeemer" onclick="alertVisit('Christ the Redeemer')">
+            <h3>Christ the Redeemer</h3>
+            <p>Located in Rio de Janeiro, Brazil.A statue symbolizing peace and Brazilian Christianity.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=OO4cuHmkm3k')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Petra">
+            <img src="https://whc.unesco.org/uploads/thumbs/site_0326_0010-360-360-20151104133420.jpg" alt="Petra" onclick="alertVisit('Petra')">
+            <h3>Petra</h3>
+            <p>Located in Jordan.An ancient city carved into rock, known as the "Rose City".</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=7PYLVshtJm0')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Angkor Wat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20171126_Angkor_Wat_4712_DxO.jpg/1280px-20171126_Angkor_Wat_4712_DxO.jpg" alt="Angkor Wat" onclick="alertVisit('Angkor Wat')">
+            <h3>Angkor Wat</h3>
+            <p>Located in Cambodia.A massive temple complex and symbol of Khmer architecture.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=KsDGDzwuQ-I')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+        
+        <div class="card" data-name="Sydney Opera House">
+            <img src="https://cdn.britannica.com/96/100196-050-C92064E0/Sydney-Opera-House-Port-Jackson.jpg?w=300" alt="Sydney Opera House" onclick="alertVisit('Sydney Opera House')">
+            <h3>Sydney Opera House</h3>
+            <p>Located in Sydney, Australia.A performing arts center and architectural masterpiece by the sea.</p>
+            <button onclick="openVideo('https://www.youtube.com/watch?v=51m-YvjmijI')">Watch</button>
+            <button onclick="addToVisit(this)">✅Add to Places to Visit</button>
+        </div>
+    </div>
+    
+    <div class="suggestion-box">
+    <h2>Suggestion Box</h2>
+        <form id="suggestionForm">
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" required>
+            <label for="userEmail">Your Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+            <label for="placeName">place to visit:</label>
+            <textarea id="placeName" name="placeName" rows="2" required></textarea>
+            <button type="submit">Submit</button>
+            <div id="thankYouMsg" class="thank-you-msg" style="display:none;"></div>
+        </form>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="t2.js"></script>
+</body>
+</html>
